@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;600&family=Raleway:wght@400;500;600&display=swap');
+html {
+	font-size: 10px;
+	overflow-x: hidden;
+}
+body {
+	background: var(--lightGreen-2);
+	overflow-x: hidden;
+	visibility: hidden;
+}
+section {
+	padding: 100px 0;
+}
+@media only screen and (max-width: 767px) {
+	section {
+		padding: 50px 0;
+	}
+}
+.container {
+	max-width: 1200px;
+	width: 90%;
+	margin: 0 auto;
+}
+:root {
+	--green-1: #26643b;
+	--green-2: #a2de96;
+	--lightGreen-1: #d6e5d8;
+	--lightGreen-2: #f5fcf4;
+	--black-1: #3b413a;
+	--black-2: #3f3c3c;
+	--black-3: #5b6359;
+	--white-1: #e8e8e8;
+}
+img {
+	width: 100%;
+	height: 100%;
+	object-fit: contain;
+}
+h1,
+h2,
+h3,
+h4 {
+	font-family: Poppins;
+}
+p {
+	font-family: Raleway;
+	font-weight: 400;
+	line-height: 1.4em;
+	font-size: 1.8rem;
+}
+a {
+	display: inline-block;
+	text-decoration: none;
+}
+.logo {
+  display: block; /* Ensure it behaves like a block element */
+  width: 150px; /* Set the desired width */
+  height: 100px; /* Set the desired height */
+}
+.logo-image {
+  width: 100%; /* Image takes up 100% of the parent's width */
+  height: 100%; /* Image takes up 100% of the parent's height */
+  object-fit: contain; /* Adjust as needed, options: contain, cover, fill */
+}
+
+.back-top-btn {
+	position: fixed;
+	bottom: 10px;
+	right: 20px;
+	background-color: var(--deep-saffron);
+	color: var(--white);
+	padding: 15px;
+	border-radius: 50%;
+	box-shadow: var(--shadow-1);
+	z-index: 2;
+	opacity: 0;
+	visibility: hidden;
+	transition: var(--transition-1);
+  }
+  
+  .back-top-btn.active {
+	opacity: 1;
+	visibility: visible;
+	transform: translateY(-10px);
+  }
+  
+  .back-top-btn:is(:hover, :focus) { background-color: var(--rich-black-fogra-29); }
+  .mySlides {display:none;}
