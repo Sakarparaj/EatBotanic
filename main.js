@@ -110,11 +110,3 @@ function openMenu(evt, menuName) {
 document.addEventListener("DOMContentLoaded", function() {
     openMenu(null, 'Breakfast');
 });
-
-
-
-
-
-
-
-  

@@ -22,6 +22,10 @@ h1 {
     text-align: center;
     margin: 20px 0;
 }
+.cost_title {
+    color: red;
+    font-weight: bold;
+}
 
 .tabs {
     display: flex;
@@ -67,21 +71,49 @@ h1 {
     margin-bottom: 20px;
 }
 
-.menu-item img {
-    width: 150px;
-    height: 150px;
-    margin-right: 20px;
-}
-
 .menu-item .info {
     max-width: 600px;
+    flex: 1;
+    position: relative;
 }
-.active {
-    background-color: var(--green-2);
-}
-
 .menu_title{
     font-size: 2.5rem;
-
+    color: green;
+}
+.drink_cost{
+    color: red;
+    font-weight: bold;
+    text-align: right;
+}
+.menu-container {
+    display: flex;
+    align-items: flex-start;
+    padding: 20px;
 }
 
+.menu-items {
+    flex: 1;
+}
+
+.menu-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    border-bottom: 1px dotted black; /* Dotted line between items */
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+
+.item-info {
+    flex: 1;
+}
+
+.item-title {
+    display: flex;
+    justify-content: space-between;
+}
+
+.cost_title {
+    margin-left: 20px; /* Space between title and cost */
+}

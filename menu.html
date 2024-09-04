@@ -12,7 +12,7 @@
   <link rel="stylesheet" href="./globalStyles.css">
   <link rel="stylesheet" href="./components.css">
   <!-- aos library css  -->
-  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css"/>
   <!-- Add your custom css -->
   <link rel="stylesheet" href="./menu.css">
 </head>
@@ -66,7 +66,11 @@
       <h2 class="page__title__text">
         Explore Our Menu
       </h2>
-    </div>
+      <br>
+      <p style="font-style: italic; color: green; text-align: center;">"Nestled in the heart of Orange Botanical Garden, We are excited to introduce a unique blend of local charm and sophisticated flavors.  <br>
+        Our bar and cafe are dedicated to celebrating the best of local wine and beer, offering an exquisite selection that showcases the richness of our region's craft."</p>
+    
+  </div>
   </section>
 
 
@@ -74,74 +78,972 @@
     <div class="tabs" data-aos="fade-up">
       <button class="tablink active" onclick="openMenu(event, 'Breakfast')">Breakfast</button>
         <button class="tablink" onclick="openMenu(event, 'Lunch')">Lunch</button>
-        <button class="tablink" onclick="openMenu(event, 'Dinner')">Dinner</button>
+        <button class="tablink" onclick="openMenu(event, 'Cafe Menu')">Cafe Menu</button>
+        <button class="tablink" onclick="openMenu(event, 'Cafe Beverages')">Cafe Beverages</button>
+        <button class="tablink" onclick="openMenu(event, 'Bar Menu')">Bar Menu</button>
     </div>
 
-    <div id="Breakfast" class="tabcontent" style="display: block;" data-aos="fade-up">
-        <div class="menu-item">
-            <img src="./images/promo-1.png" alt="Pancakes">
-            <div class="info">
-                <h3 class="menu_title">Pancakes</h3>
-                <p>Fluffy pancakes served with syrup and butter.</p>
-                <p class="cost_title">Cost: $5.99</p>
+  <div id="Breakfast" class="tabcontent" style="display: block;" data-aos="fade-up">
+    <h3 class="menu_title" style="text-align: center; font-size: medium;">BREAKFAST (08:00-12:00)</h3>
+    <div class="menu-container">
+        <div class="menu-items">
+            <div class="menu-item">
+                <div class="item-info">
+                    <div class="item-title">
+                        <h3 class="menu_title">TOAST</h3>
+                        <p class="cost_title">$7.00</p>
+                    </div>
+                    <p>Sourdough / White / GF / Raisin</p>
+                </div>
+            </div>
+            <div class="menu-item">
+                <div class="item-info">
+                    <div class="item-title">
+                        <h3 class="menu_title">EGG & BACON ROLL</h3>
+                        <p class="cost_title">$13.00</p>
+                    </div>
+                    <p>Fried egg, double bacon & house sauce, served with potato gems</p>
+                </div>
+            </div>
+            <div class="menu-item">
+                <div class="item-info">
+                    <div class="item-title">
+                        <h3 class="menu_title">EAT BOTANIC'S GRANOLA</h3>
+                        <p class="cost_title">$16.00</p>
+                    </div>
+                    <p>Granola, natural yoghurt, maple syrup and fruits</p>
+                </div>
+            </div>
+            <div class="menu-item">
+                <div class="item-info">
+                    <div class="item-title">
+                        <h3 class="menu_title">EGGS FLORENTINO (V)</h3>
+                        <p class="cost_title">$16.00</p>
+                    </div>
+                    <p>Poached eggs, spinach, confit garlic paste, hollandaise, balsamic glaze and dukkah</p>
+                </div>
+            </div>
+            <div class="menu-item">
+                <div class="item-info">
+                    <div class="item-title">
+                        <h3 class="menu_title">EGGS BENEDICT</h3>
+                        <p class="cost_title">$18.00</p>
+                    </div>
+                    <p>Poached eggs with bacon or salmon, spinach, hollandaise, balsamic glaze and dukkah</p>
+                </div>
+            </div>
+            <div class="menu-item">
+                <div class="item-info">
+                    <div class="item-title">
+                        <h3 class="menu_title">SMASHED AVO (GF, V)</h3>
+                        <p class="cost_title">$18.00</p>
+                    </div>
+                    <p>Bacon, poached egg, smashed avo, feta, balsamic glaze and dukkah</p>
+                </div>
+            </div>
+            <div class="menu-item">
+                <div class="item-info">
+                    <div class="item-title">
+                        <h3 class="menu_title">BREAKFAST WRAP</h3>
+                        <p class="cost_title">$20.00</p>
+                    </div>
+                    <p>Bacon, halloumi, fried egg, avocado, spinach, house sauce, pico de gallo salsa</p>
+                </div>
+            </div>
+            <div class="menu-item">
+                <div class="item-info">
+                    <div class="item-title">
+                        <h3 class="menu_title">CHEF SPECIAL PANCAKE</h3>
+                        <p class="cost_title">$20.00</p>
+                    </div>
+                    <p>House made ricotta pancakes, salted peanut praline, chantilly cream, fruit compote, fresh fruits and maple syrup</p>
+                </div>
+            </div>
+            <div class="menu-item">
+                <div class="item-info">
+                    <div class="item-title">
+                        <h3 class="menu_title">VEGETARIAN BREAKFAST</h3>
+                        <p class="cost_title">$20.00</p>
+                    </div>
+                    <p>Toasted garlic bread served with avocado, grilled halloumi, mushrooms, spinach, hash brown, grilled tomatoes, baked beans</p>
+                </div>
+            </div>
+            <div class="menu-item">
+                <div class="item-info">
+                    <div class="item-title">
+                        <h3 class="menu_title">BOTANIC SPECIAL BREAKFAST</h3>
+                        <p class="cost_title">$23.00</p>
+                    </div>
+                    <p>Toasted garlic bread, bacon, egg, sausage, grilled tomatoes, mushrooms, spinach, hash brown, baked beans</p>
+                </div>
+            </div>
+            <!-- Extras -->
+            <div class="menu-item">
+                <div class="item-info">
+                    <div class="item-title">
+                        <h3 class="menu_title">Extras</h3>
+                        <p class="cost_title"></p>
+                    </div>
+                    <div class="item-title">
+                      <p>Hash brown / roast tomatoes / spinach / beans</p>
+                      <p class="cost_title">$4.00</p>
+                  </div>
+                  <div class="item-title">
+                    <p>Mushrooms / egg / avocado</p>
+                    <p class="cost_title">$4.00</p>
+                </div>
+                <div class="item-title">
+                  <p>Bacon / Halloumi</p>
+                  <p class="cost_title">$5.00</p>
+              </div>
+              <div class="item-title">
+                <p>Salmon</p>
+                <p class="cost_title">$6.00</p>
+            </div>
             </div>
         </div>
-        <div class="menu-item">
-          <img src="./images/promo-1.png" alt="Pancakes">
-          <div class="info">
-              <h3 class="menu_title">Pancakes</h3>
-              <p>Fluffy pancakes served with syrup and butter.</p>
-              <p class="cost_title">Cost: $5.99</p>
-          </div>
-      </div>
-      <div class="menu-item">
-        <img src="./images/promo-1.png" alt="Pancakes">
-        <div class="info">
-            <h3 class="menu_title">Pancakes</h3>
-            <p>Fluffy pancakes served with syrup and butter.</p>
-            <p class="cost_title">Cost: $5.99</p>
-        </div>
-    </div>
-    <div class="menu-item">
-      <img src="./images/promo-1.png" alt="Pancakes">
-      <div class="info">
-          <h3 class="menu_title">Pancakes</h3>
-          <p>Fluffy pancakes served with syrup and butter.</p>
-          <p class="cost_title">Cost: $5.99</p>
-      </div>
-  </div>
-  
-        <!-- More breakfast items can be added here -->
-    </div>
-
-    <div id="Lunch" class="tabcontent" data-aos="fade-up">
-        <div class="menu-item">
-            <img src="./images/food-1.png" alt="Burger">
-            <div class="info">
-                <h3 class="menu_title">Burger</h3>
-                <p>Juicy beef burger with lettuce, tomato, and cheese.</p>
-                <p>Cost: $9.99</p>
-            </div>
-        </div>
-        <!-- More lunch items can be added here -->
-    </div>
-
-    <div id="Dinner" class="tabcontent" data-aos="fade-up">
-        <div class="menu-item">
-            <img src="./images/food-4.png" alt="Steak">
-            <div class="info">
-                <h3 class="menu_title">Steak</h3>
-                <p>Grilled steak served with mashed potatoes and vegetables.</p>
-                <p>Cost: $19.99</p>
-            </div>
-        </div>
-        <!-- More dinner items can be added here -->
     </div>
 </div>
+</div>
+  
 
-         
+<div id="Lunch" class="tabcontent" data-aos="fade-up">
+  <h3 class="menu_title" style="text-align: center; font-size: medium;">LUNCH (11:00-14:30)</h3>
+  <div class="menu-container">
+      <div class="menu-items">
+          <div class="menu-item">
+              <div class="item-info">
+                  <div class="item-title">
+                      <h3 class="menu_title">CORN FRITTERS (GF, V)</h3>
+                      <p class="cost_title">$22.00</p>
+                  </div>
+                  <p>Corn fritters, bacon, poached egg, spinach, beetroot relish, balsamic glaze and dukkah</p>
+              </div>
+          </div>
+          <div class="menu-item">
+              <div class="item-info">
+                  <div class="item-title">
+                      <h3 class="menu_title">FISH & CHIPS</h3>
+                      <p class="cost_title">$22.00</p>
+                  </div>
+                  <p>Dill and parmesan crusted fish, chips & salad</p>
+              </div>
+          </div>
+          <div class="menu-item">
+              <div class="item-info">
+                  <div class="item-title">
+                      <h3 class="menu_title">BUTTERMILK CHICKEN BURGER (GF, V)</h3>
+                      <p class="cost_title">$22.00</p>
+                  </div>
+                  <p>Fried buttermilk chicken, cheese, tomato, pickle, aioli, lettuce</p>
+              </div>
+          </div>
+          <div class="menu-item">
+              <div class="item-info">
+                  <div class="item-title">
+                      <h3 class="menu_title">STEAK & BACON BURGER (GF)</h3>
+                      <p class="cost_title">$24.00</p>
+                  </div>
+                  <p>150g steak, bacon, caramelised onion, cheese, pickle, lettuce and tomato</p>
+              </div>
+          </div>
+          <div class="menu-item">
+              <div class="item-info">
+                  <div class="item-title">
+                      <h3 class="menu_title">PESTO PASTA (GF)</h3>
+                      <p class="cost_title">$18.00</p>
+                  </div>
+                  <p>Linguine, pesto, cherry tomatoes, pine nuts, parmesan</p>
+                  <p>Add Chicken + $5.00 / Add Prawns + $8.00</p>
+              </div>
+          </div>
+          <div class="menu-item">
+              <div class="item-info">
+                  <div class="item-title">
+                      <h3 class="menu_title">MUSHROOM RISOTTO</h3>
+                      <p class="cost_title">$22.00</p>
+                  </div>
+                  <p>Medley of mushrooms, truffle oil, parmesan, spinach</p>
+              </div>
+          </div>
+          <div class="menu-item">
+              <div class="item-info">
+                  <div class="item-title">
+                      <h3 class="menu_title">GARLIC PRAWN (GF)</h3>
+                      <p class="cost_title">$26.00</p>
+                  </div>
+                  <p>Prawns sauteed with garlic, lemon juice and butter, served with crusty bread for dipping</p>
+              </div>
+          </div>
+          <div class="menu-item">
+              <div class="item-info">
+                  <div class="item-title">
+                      <h3 class="menu_title">CHICKEN CAESAR SALAD</h3>
+                      <p class="cost_title">$22.00</p>
+                  </div>
+                  <p>Cos lettuce, crisp bacon, chicken, feta, shaved parmesan, caesar dressing</p>
+              </div>
+          </div>
+          <!-- Kids Menu / Extras -->
+            <div class="menu-item">
+              <div class="item-info">
+                <div class="item-title">
+                  <h3 class="menu_title">Kids Menu / Extras</h3>
+              </div>
+                  <div class="item-title">
+                      <p>Eggs on Toast</p>
+                      <p class="cost_title">$10.00</p>
+                  </div>
+                  <div class="item-title">
+                      <p>Chicken Nuggets & Chips</p>
+                      <p class="cost_title">$12.00</p>
+                  </div>
+                  <div class="item-title">
+                      <p>Fish & Chips</p>
+                      <p class="cost_title">$12.00</p>
+                  </div>
+                  <div class="item-title">
+                      <p>Bowl of Chips</p>
+                      <p class="cost_title">$10.00</p>
+                  </div>
+                  </div>
+          </div>
+      </div>
+  </div>
+</div>
+
+<div id="Cafe Beverages" class="tabcontent" data-aos="fade-up">
+  <!-- Coffee Section -->
+  <h3 class="menu_title" style="text-align: center; color: black; padding-bottom: 5px;"><u>COFFEE</u></h3>
+  <h3 class="menu_title" style="text-align: right;">CUP / MUG</h3>
+
+  <!-- Coffee Items -->
+  <div class="menu-item" style="display: flex; justify-content: space-between; align-items: center;">
+      <div class="info">
+          <h3 class="menu_title" style="margin: 0;">CAPPUCCINO</h3>
+      </div>
+      <div class="drink_cost">
+          <p style="margin: 0;">$5.00 / $5.50</p>
+      </div>
+  </div>
+  <div class="menu-item" style="display: flex; justify-content: space-between; align-items: center;">
+      <div class="info">
+          <h3 class="menu_title" style="margin: 0;">LATTE</h3>
+      </div>
+      <div class="drink_cost">
+          <p style="margin: 0;">$5.00 / $5.50</p>
+      </div>
+  </div>
+  <div class="menu-item" style="display: flex; justify-content: space-between; align-items: center;">
+      <div class="info">
+          <h3 class="menu_title" style="margin: 0;">FLAT WHITE</h3>
+      </div>
+      <div class="drink_cost">
+          <p style="margin: 0;">$5.00 / $5.50</p>
+      </div>
+  </div>
+  <div class="menu-item" style="display: flex; justify-content: space-between; align-items: center;">
+      <div class="info">
+          <h3 class="menu_title" style="margin: 0;">LONG BLACK</h3>
+      </div>
+      <div class="drink_cost">
+          <p style="margin: 0;">$5.00 / $5.50</p>
+      </div>
+  </div>
+  <div class="menu-item" style="display: flex; justify-content: space-between; align-items: center;">
+      <div class="info">
+          <h3 class="menu_title" style="margin: 0;">MOCHA</h3>
+      </div>
+      <div class="drink_cost">
+          <p style="margin: 0;">$5.00 / $5.50</p>
+      </div>
+  </div>
+  <div class="menu-item" style="display: flex; justify-content: space-between; align-items: center;">
+      <div class="info">
+          <h3 class="menu_title" style="margin: 0;">HOT CHOCOLATE</h3>
+      </div>
+      <div class="drink_cost">
+          <p style="margin: 0;">$5.00 / $5.50</p>
+      </div>
+  </div>
+  <div class="menu-item" style="display: flex; justify-content: space-between; align-items: center;">
+      <div class="info">
+          <h3 class="menu_title" style="margin: 0;">CHAI LATTE</h3>
+      </div>
+      <div class="drink_cost">
+          <p style="margin: 0;">$5.00 / $5.50</p>
+      </div>
+  </div>
+  <div class="menu-item" style="display: flex; justify-content: space-between; align-items: center;">
+      <div class="info">
+          <h3 class="menu_title" style="margin: 0;">ICED LATTE</h3>
+      </div>
+      <div class="drink_cost">
+          <p style="margin: 0;">$5.50</p>
+      </div>
+  </div>
+  <div class="menu-item" style="display: flex; justify-content: space-between; align-items: center;">
+      <div class="info">
+          <h3 class="menu_title" style="margin: 0;">ESPRESSO</h3>
+      </div>
+      <div class="drink_cost">
+          <p style="margin: 0;">$4.00</p>
+      </div>
+  </div>
+  <div class="menu-item" style="display: flex; justify-content: space-between; align-items: center;">
+      <div class="info">
+          <h3 class="menu_title" style="margin: 0;">PICCOLO</h3>
+      </div>
+      <div class="drink_cost">
+          <p style="margin: 0;">$4.00</p>
+      </div>
+  </div>
+  <div class="menu-item" style="display: flex; justify-content: space-between; align-items: center;">
+      <div class="info">
+          <h3 class="menu_title" style="margin: 0;">MACCHIATO</h3>
+      </div>
+      <div class="drink_cost">
+          <p style="margin: 0;">$4.00</p>
+      </div>
+  </div>
+  <div class="menu-item" style="display: flex; justify-content: space-between; align-items: center;">
+      <div class="info">
+          <h3 class="menu_title" style="margin: 0;">BABYCINO</h3>
+      </div>
+      <div class="drink_cost">
+          <p style="margin: 0;">$0.50</p>
+      </div>
+  </div>
+
+  <!-- Extras Section -->
+  <div class="menu-item" style="display: flex; justify-content: space-between; align-items: center;">
+    <div class="info">
+        <h3 class="menu_title" style="margin: 0;">Extra Shot</h3>
+    </div>
+    <div class="drink_cost">
+        <p style="margin: 0;">+ $0.50</p>
+    </div>
+</div>
+<div class="menu-item" style="display: flex; justify-content: space-between; align-items: center;">
+  <div class="info">
+      <h3 class="menu_title" style="margin: 0;">Syrups:</h3>
+        <p style="margin: 0;">Caramel, Vanilla, Hazelnut</p>
+  </div>
+  <div class="drink_cost">
+      <p style="margin: 0;">+ $0.50</p>
+  </div>
+</div>
+<div class="menu-item" style="display: flex; justify-content: space-between; align-items: center;">
+  <div class="info">
+      <h3 class="menu_title" style="margin: 0;">Alternative Milks:</h3>
+        <p style="margin: 0;">Soy, Almond, Oat, Lactose Free</p>
+  </div>
+  <div class="drink_cost">
+      <p style="margin: 0;">+ $0.50</p>
+  </div>
+</div>
+
+  <!-- Tea Section -->
+  <h3 class="menu_title" style="text-align: center; color: black; padding-bottom: 50px; padding-top: 50px;"> <u>TEAS</u></h3>
+  <h3 class="menu_title" style="text-align: right;">$6.00 / Pot</h3>
+  <div class="menu-item" style="display: flex; justify-content: space-between; align-items: center;">
+      <div class="info">
+          <h3 class="menu_title" style="margin: 0;">ENGLISH BREAKFAST</h3>
+      </div>
+      <div class="drink_cost">
+          <p style="margin: 0;">$6.00</p>
+      </div>
+  </div>
+  <div class="menu-item" style="display: flex; justify-content: space-between; align-items: center;">
+      <div class="info">
+          <h3 class="menu_title" style="margin: 0;">EARL GREY</h3>
+      </div>
+      <div class="drink_cost">
+          <p style="margin: 0;">$6.00</p>
+      </div>
+  </div>
+  <div class="menu-item" style="display: flex; justify-content: space-between; align-items: center;">
+      <div class="info">
+          <h3 class="menu_title" style="margin: 0;">GREEN</h3>
+      </div>
+      <div class="drink_cost">
+          <p style="margin: 0;">$6.00</p>
+      </div>
+  </div>
+  <div class="menu-item" style="display: flex; justify-content: space-between; align-items: center;">
+      <div class="info">
+          <h3 class="menu_title" style="margin: 0;">PEPPERMINT</h3>
+      </div>
+      <div class="drink_cost">
+          <p style="margin: 0;">$6.00</p>
+      </div>
+  </div>
+  <div class="menu-item" style="display: flex; justify-content: space-between; align-items: center;">
+      <div class="info">
+          <h3 class="menu_title" style="margin: 0;">MASALA</h3>
+      </div>
+      <div class="drink_cost">
+          <p style="margin: 0;">$6.00</p>
+      </div>
+  </div>
+  <div class="menu-item" style="display: flex; justify-content: space-between; align-items: center;">
+      <div class="info">
+          <h3 class="menu_title" style="margin: 0;">LEMONGRASS & GINGER</h3>
+      </div>
+      <div class="drink_cost">
+          <p style="margin: 0;">$6.00</p>
+      </div>
+  </div>
+  <div class="menu-item" style="display: flex; justify-content: space-between; align-items: center;">
+      <div class="info">
+          <h3 class="menu_title" style="margin: 0;">T2 TEAS</h3>
+      </div>
+      <div class="drink_cost">
+          <p style="margin: 0;">$10.00 / Pot</p>
+      </div>
+  </div>
+ 
+  <!-- Cold Drinks Section -->
+  <h3 class="menu_title" style="text-align: center; color: black; padding-bottom: 50px; padding-top: 50px;"> <u>COLD DRINKS </u></h3>
+
+  <!-- Cold Drinks Items -->
+  <div class="menu-item" style="display: flex; justify-content: space-between; align-items: center;">
+      <div class="info">
+          <h3 class="menu_title" style="margin: 0;">Soft Drinks</h3>
+          <p style="margin: 0;">Coke / Coke Zero / Lemon Lime & Bitters<br>Lemonade / Ginger Ale</p>
+      </div>
+      <div class="drink_cost">
+          <p style="margin: 0;">$4.50</p>
+      </div>
+  </div>
+  <div class="menu-item" style="display: flex; justify-content: space-between; align-items: center;">
+      <div class="info">
+          <h3 class="menu_title" style="margin: 0;">Sparkling Mineral Water</h3>
+      </div>
+      <div class="drink_cost">
+          <p style="margin: 0;">$10.00</p>
+      </div>
+  </div>
+  <div class="menu-item" style="display: flex; justify-content: space-between; align-items: center;">
+      <div class="info">
+          <h3 class="menu_title" style="margin: 0;">Juices</h3>
+          <p style="margin: 0;">Orange / Pineapple / Apple</p>
+      </div>
+      <div class="drink_cost">
+          <p style="margin: 0;">$5.00</p>
+      </div>
+  </div>
+  <div class="menu-item" style="display: flex; justify-content: space-between; align-items: center;">
+      <div class="info">
+          <h3 class="menu_title" style="margin: 0;">Milkshakes</h3>
+          <p style="margin: 0;">Chocolate / Vanilla / Strawberry / Caramel</p>
+      </div>
+      <div class="drink_cost">
+          <p style="margin: 0;">Kids: $4.00<br>Large: $6.00</p>
+      </div>
+  </div>
+  <div class="menu-item" style="display: flex; justify-content: space-between; align-items: center;">
+      <div class="info">
+          <h3 class="menu_title" style="margin: 0;">Mayfield Icy Cold</h3>
+          <p style="margin: 0;">Lemonade / Lime / Creaming Soda<br>Orange / Lemon Lime & Bitters</p>
+      </div>
+      <div class="drink_cost">
+          <p style="margin: 0;">$8.00</p>
+      </div>
+  </div>
+  <div class="menu-item" style="display: flex; justify-content: space-between; align-items: center;">
+      <div class="info">
+          <h3 class="menu_title" style="margin: 0;">Bottled Juice</h3>
+          <p style="margin: 0;">Green Heart: Kiwi, Pear, Mango, Peach, Lime<br>Dark Heart: Apple, Beetroot, Carrot, Ginger, Lemon</p>
+      </div>
+      <div class="drink_cost">
+          <p style="margin: 0;">$7.00</p>
+      </div>
+  </div>
+  <div class="menu-item" style="display: flex; justify-content: space-between; align-items: center;">
+      <div class="info">
+          <h3 class="menu_title" style="margin: 0;">Smoothie</h3>
+          <p style="margin: 0;">Immunizing Smoothie: Orange, Carrot, Lemon, Ginger<br>Cleanser Smoothie: Beetroot, Carrot, Lime, Pear</p>
+      </div>
+      <div class="drink_cost">
+          <p style="margin: 0;">$10.00</p>
+      </div>
+  </div>
+  <div class="menu-item" style="display: flex; justify-content: space-between; align-items: center;">
+      <div class="info">
+          <h3 class="menu_title" style="margin: 0;">Virgin Mojito</h3>
+      </div>
+      <div class="drink_cost">
+          <p style="margin: 0;">$10.00</p>
+      </div>
+  </div>
+  <div class="menu-item" style="display: flex; justify-content: space-between; align-items: center;">
+      <div class="info">
+          <h3 class="menu_title" style="margin: 0;">Virgin Strawberry Caprioska</h3>
+      </div>
+      <div class="drink_cost">
+          <p style="margin: 0;">$12.00</p>
+      </div>
+  </div>
+</div>
 
 
+<div id="Cafe Menu" class="tabcontent" data-aos="fade-up">
+  <div class="menu-container">
+      <div class="menu-items">
+          
+          <!-- Sandwiches Section -->
+          <div class="menu-section">
+            <h3 class="menu_title" style="text-align: center; color: black; padding-bottom: 25px;"> <u>SANDWICHES</u></h3>
+              <div class="menu-item">
+                  <div class="item-info">
+                      <div class="item-title">
+                          <h3 class="menu_title">ROASTED VEGE</h3>
+                          <p class="cost_title">$15.00</p>
+                      </div>
+                      <p>Roasted eggplant and capsicum, tomato, pesto, bocconcini</p>
+                  </div>
+              </div>
+              <div class="menu-item">
+                  <div class="item-info">
+                      <div class="item-title">
+                          <h3 class="menu_title">BRIE</h3>
+                          <p class="cost_title">$15.00</p>
+                      </div>
+                      <p>Brie, lettuce, tomato, cucumber</p>
+                  </div>
+              </div>
+              <div class="menu-item">
+                  <div class="item-info">
+                      <div class="item-title">
+                          <h3 class="menu_title">SALAMI</h3>
+                          <p class="cost_title">$18.00</p>
+                      </div>
+                      <p>Salami, lettuce, tomato, cucumber, cheese, pesto</p>
+                  </div>
+              </div>
+              <div class="menu-item">
+                  <div class="item-info">
+                      <div class="item-title">
+                          <h3 class="menu_title">CHICKEN</h3>
+                          <p class="cost_title">$18.00</p>
+                      </div>
+                      <p>Chicken, lettuce, tomato, cucumber, cheese</p>
+                  </div>
+              </div>
+          </div>
+
+          <!-- Grab and Go Section -->
+          <div class="menu-section">
+            <h3 class="menu_title" style="text-align: center; color: black; padding-top: 25px; padding-bottom: 25px;"> <u>GRAB AND GO</u></h3>
+              <div class="menu-item">
+                  <div class="item-info">
+                      <div class="item-title">
+                          <h3 class="menu_title">SAUSAGE ROLL</h3>
+                          <p class="cost_title">$7.00</p>
+                      </div>
+                  </div>
+              </div>
+              <div class="menu-item">
+                  <div class="item-info">
+                      <div class="item-title">
+                          <h3 class="menu_title">PIES</h3>
+                          <p class="cost_title">$8.00</p>
+                      </div>
+                  </div>
+              </div>
+              <div class="menu-item">
+                  <div class="item-info">
+                      <div class="item-title">
+                          <h3 class="menu_title">HAM & CHEESE CROISSANT</h3>
+                          <p class="cost_title">$8.50</p>
+                      </div>
+                  </div>
+              </div>
+              <div class="menu-item">
+                  <div class="item-info">
+                      <div class="item-title">
+                          <h3 class="menu_title">PLAIN CROISSANT</h3>
+                          <p class="cost_title">$6.50</p>
+                      </div>
+                  </div>
+              </div>
+              <div class="menu-item">
+                  <div class="item-info">
+                      <div class="item-title">
+                          <h3 class="menu_title">BANANA BREAD</h3>
+                          <p class="cost_title">$6.50</p>
+                      </div>
+                  </div>
+              </div>
+              <div class="menu-item">
+                  <div class="item-info">
+                      <div class="item-title">
+                          <h3 class="menu_title">SCONES W/ JAM & CREAM</h3>
+                          <p class="cost_title">$7.00</p>
+                      </div>
+                  </div>
+              </div>
+              <div class="menu-item">
+                  <div class="item-info">
+                      <div class="item-title">
+                          <h3 class="menu_title">MUFFIN</h3>
+                          <p class="cost_title">$6.50</p>
+                      </div>
+                  </div>
+              </div>
+          </div>
+
+          <!-- Desserts Section -->
+          <div class="menu-section">
+            <h3 class="menu_title" style="text-align: center; color: black; padding-top: 25px; padding-bottom: 25px;"> <u>DESSERTS</u></h3>
+              <div class="menu-item">
+                  <div class="item-info">
+                    <h3 class="menu_title" style="margin: 0;">DESSERTS</h3>
+                    <p style="margin: 0;">Please see our cabinet for sweet treats, cakes and slices, including:<br>
+                      Brownies,<br>
+                      Rocky Road,<br>
+                      Caramel Slice,<br>
+                      Cheesecake,<br>
+                      Carrot Cake,<br>
+                      Muffins & more..
+                      </p>
+                  </div>
+              </div>
+          </div>
+
+      </div>
+  </div>
+</div>
+
+
+<div id="Bar Menu" class="tabcontent" data-aos="fade-up">
+  <div class="menu-container">
+      <div class="menu-items">
+          
+          <!--Wine Bar House Section -->
+          <div class="menu-section">
+            <h3 class="menu_title" style="text-align: center; color: black; padding-bottom: 25px;"> <u>Wine Bar House</u></h3>
+            <h3 class="menu_title" style="text-align: right;">GLASS/BOTTLE</h3>
+            
+              <!-- Wine Bar House Items -->
+              <div class="menu-item" style="display: flex; justify-content: space-between; align-items: center;">
+                  <div class="info">
+                      <h3 class="menu_title" style="margin: 0;">Sweet Phoebe NV By Tamburlaine</h3>
+                  </div>
+                  <div class="drink_cost">
+                      <p style="margin: 0;">$10.00 / $35.00</p>
+                  </div>
+              </div>
+              <div class="menu-item" style="display: flex; justify-content: space-between; align-items: center;">
+                  <div class="info">
+                      <h3 class="menu_title" style="margin: 0;">Pinot Gris By Tamburlaine</h3>
+                  </div>
+                  <div class="drink_cost">
+                      <p style="margin: 0;">$10.00 / $35.00</p>
+                  </div>
+              </div>
+              <div class="menu-item" style="display: flex; justify-content: space-between; align-items: center;">
+                  <div class="info">
+                      <h3 class="menu_title" style="margin: 0;">Scarlet Bubble NV By Tamburlaine</h3>
+                  </div>
+                  <div class="drink_cost">
+                      <p style="margin: 0;">$10.00 / $35.00</p>
+                  </div>
+              </div>
+              <div class="menu-item" style="display: flex; justify-content: space-between; align-items: center;">
+                  <div class="info">
+                      <h3 class="menu_title" style="margin: 0;">Merlot By Tamburlaine</h3>
+                  </div>
+                  <div class="drink_cost">
+                      <p style="margin: 0;">$10.00 / $35.00</p>
+                  </div>
+              </div>
+              <div class="menu-item" style="display: flex; justify-content: space-between; align-items: center;">
+                  <div class="info">
+                      <h3 class="menu_title" style="margin: 0;">Rosé By Tamburlaine</h3>
+                  </div>
+                  <div class="drink_cost">
+                      <p style="margin: 0;">$10.00 / $35.00</p>
+                  </div>
+              </div>
+              <div class="menu-item" style="display: flex; justify-content: space-between; align-items: center;">
+                  <div class="info">
+                      <h3 class="menu_title" style="margin: 0;">Rosé By Mad Hatter</h3>
+                  </div>
+                  <div class="drink_cost">
+                      <p style="margin: 0;">$7.00 / $25.00</p>
+                  </div>
+              </div>
+              <div class="menu-item" style="display: flex; justify-content: space-between; align-items: center;">
+                  <div class="info">
+                      <h3 class="menu_title" style="margin: 0;">Prosecco By Mad Hatter</h3>
+                  </div>
+                  <div class="drink_cost">
+                      <p style="margin: 0;">$7.00 / $25.00</p>
+                  </div>
+              </div>
+              <div class="menu-item" style="display: flex; justify-content: space-between; align-items: center;">
+                  <div class="info">
+                      <h3 class="menu_title" style="margin: 0;">Shiraz By Mad Hatter</h3>
+                  </div>
+                  <div class="drink_cost">
+                      <p style="margin: 0;">$7.00 / $25.00</p>
+                  </div>
+              </div>
+              <div class="menu-item" style="display: flex; justify-content: space-between; align-items: center;">
+                  <div class="info">
+                      <h3 class="menu_title" style="margin: 0;">Pinot Gris By Mad Hatter</h3>
+                  </div>
+                  <div class="drink_cost">
+                      <p style="margin: 0;">$7.00 / $25.00</p>
+                  </div>
+              </div>
+            
+              <!-- Sparkling Section -->
+              <h3 class="menu_title" style="text-align: center; color: black; padding-bottom: 5px; padding-top: 50px;"><u>SPARKLING</u></h3>
+              <div class="menu-item" style="display: flex; justify-content: space-between; align-items: center;">
+                  <div class="info">
+                      <h3 class="menu_title" style="margin: 0;">Prosecco By Tambourine</h3>
+                  </div>
+                  <div class="drink_cost">
+                      <p style="margin: 0;">$80.00</p>
+                  </div>
+              </div>
+              <div class="menu-item" style="display: flex; justify-content: space-between; align-items: center;">
+                  <div class="info">
+                      <h3 class="menu_title" style="margin: 0;">Sparkling Binanco D'Bingo By Zinga 2019</h3>
+                  </div>
+                  <div class="drink_cost">
+                      <p style="margin: 0;">$40.00</p>
+                  </div>
+              </div>
+              <div class="menu-item" style="display: flex; justify-content: space-between; align-items: center;">
+                  <div class="info">
+                      <h3 class="menu_title" style="margin: 0;">Chestnut Garth Cuvée By Mortimer</h3>
+                  </div>
+                  <div class="drink_cost">
+                      <p style="margin: 0;">$70.00</p>
+                  </div>
+              </div>
+            
+              <!-- White Section -->
+              <h3 class="menu_title" style="text-align: center; color: black; padding-bottom: 5px; padding-top: 50px;"><u>WHITE</u></h3>
+              <div class="menu-item" style="display: flex; justify-content: space-between; align-items: center;">
+                  <div class="info">
+                      <h3 class="menu_title" style="margin: 0;">Byrne Farm Chardonnay</h3>
+                  </div>
+                  <div class="drink_cost">
+                      <p style="margin: 0;">$75.00</p>
+                  </div>
+              </div>
+              <div class="menu-item" style="display: flex; justify-content: space-between; align-items: center;">
+                  <div class="info">
+                      <h3 class="menu_title" style="margin: 0;">1k Manseng 2022 By World of Mouth</h3>
+                  </div>
+                  <div class="drink_cost">
+                      <p style="margin: 0;">$75.00</p>
+                  </div>
+              </div>
+              <div class="menu-item" style="display: flex; justify-content: space-between; align-items: center;">
+                  <div class="info">
+                      <h3 class="menu_title" style="margin: 0;">Reserve Orange Riesling By Tamburlaine</h3>
+                  </div>
+                  <div class="drink_cost">
+                      <p style="margin: 0;">$70.00</p>
+                  </div>
+              </div>
+              <div class="menu-item" style="display: flex; justify-content: space-between; align-items: center;">
+                  <div class="info">
+                      <h3 class="menu_title" style="margin: 0;">Reserve Orange Chardonnay By Tamburlaine</h3>
+                  </div>
+                  <div class="drink_cost">
+                      <p style="margin: 0;">$70.00</p>
+                  </div>
+              </div>
+              <div class="menu-item" style="display: flex; justify-content: space-between; align-items: center;">
+                  <div class="info">
+                      <h3 class="menu_title" style="margin: 0;">Chestnut Garth Chardonnay By Mortimer</h3>
+                  </div>
+                  <div class="drink_cost">
+                      <p style="margin: 0;">$70.00</p>
+                  </div>
+              </div>
+              <div class="menu-item" style="display: flex; justify-content: space-between; align-items: center;">
+                  <div class="info">
+                      <h3 class="menu_title" style="margin: 0;">Chestnut Garth Sauvignon Blanc By Mortimer</h3>
+                  </div>
+                  <div class="drink_cost">
+                      <p style="margin: 0;">$70.00</p>
+                  </div>
+              </div>
+            
+              <!-- Rose Section -->
+              <h3 class="menu_title" style="text-align: center; color: black; padding-bottom: 5px; padding-top: 50px;"><u>ROSÉ</u></h3>
+              <div class="menu-item" style="display: flex; justify-content: space-between; align-items: center;">
+                  <div class="info">
+                      <h3 class="menu_title" style="margin: 0;">Chestnut Garth Rosé By Mortimer</h3>
+                  </div>
+                  <div class="drink_cost">
+                      <p style="margin: 0;">$70.00</p>
+                  </div>
+              </div>
+              <div class="menu-item" style="display: flex; justify-content: space-between; align-items: center;">
+                  <div class="info">
+                      <h3 class="menu_title" style="margin: 0;">Big Men in Tights By Bloodwood</h3>
+                  </div>
+                  <div class="drink_cost">
+                      <p style="margin: 0;">$70.00</p>
+                  </div>
+              </div>
+              <div class="menu-item" style="display: flex; justify-content: space-between; align-items: center;">
+                  <div class="info">
+                      <h3 class="menu_title" style="margin: 0;">Rosé By Zinga</h3>
+                  </div>
+                  <div class="drink_cost">
+                      <p style="margin: 0;">$75.00</p>
+                  </div>
+              </div>
+            
+              <!-- Red Section -->
+              <h3 class="menu_title" style="text-align: center; color: black; padding-bottom: 5px; padding-top: 50px;"><u>RED</u></h3>
+              <div class="menu-item" style="display: flex; justify-content: space-between; align-items: center;">
+                  <div class="info">
+                      <h3 class="menu_title" style="margin: 0;">Point 65 Pinot Noir By Tamburlaine</h3>
+                  </div>
+                  <div class="drink_cost">
+                      <p style="margin: 0;">$70.00</p>
+                  </div>
+              </div>
+              <div class="menu-item" style="display: flex; justify-content: space-between; align-items: center;">
+                  <div class="info">
+                      <h3 class="menu_title" style="margin: 0;">Reserve Shiraz By Zinga 2019</h3>
+                  </div>
+                  <div class="drink_cost">
+                      <p style="margin: 0;">$80.00</p>
+                  </div>
+              </div>
+              <div class="menu-item" style="display: flex; justify-content: space-between; align-items: center;">
+                  <div class="info">
+                      <h3 class="menu_title" style="margin: 0;">Byrne Farm Shiraz/Pinot Noir</h3>
+                  </div>
+                  <div class="drink_cost">
+                      <p style="margin: 0;">$80.00</p>
+                  </div>
+              </div>
+              <div class="menu-item" style="display: flex; justify-content: space-between; align-items: center;">
+                  <div class="info">
+                      <h3 class="menu_title" style="margin: 0;">1k Shiraz By World of Mouth</h3>
+                  </div>
+                  <div class="drink_cost">
+                      <p style="margin: 0;">$80.00</p>
+                  </div>
+              </div>
+              <div class="menu-item" style="display: flex; justify-content: space-between; align-items: center;">
+                  <div class="info">
+                      <h3 class="menu_title" style="margin: 0;">Bloodwood Shiraz (2019)</h3>
+                  </div>
+                  <div class="drink_cost">
+                      <p style="margin: 0;">$90.00</p>
+                  </div>
+              </div>
+              <div class="menu-item" style="display: flex; justify-content: space-between; align-items: center;">
+                  <div class="info">
+                      <h3 class="menu_title" style="margin: 0;">Bloodwood Merlot Noir (2017)</h3>
+                  </div>
+                  <div class="drink_cost">
+                      <p style="margin: 0;">$100.00</p>
+                  </div>
+              </div>
+              <div class="menu-item" style="display: flex; justify-content: space-between; align-items: center;">
+                  <div class="info">
+                      <h3 class="menu_title" style="margin: 0;">Jules 2022 Shiraz Cabernet Sauvignon By Mortimore</h3>
+                  </div>
+                  <div class="drink_cost">
+                      <p style="margin: 0;">$120.00</p>
+                  </div>
+              </div>
+            
+              <!-- Local Beer Section -->
+              <h3 class="menu_title" style="text-align: center; color: black; padding-bottom: 5px; padding-top: 50px;"><u>LOCAL BEER</u></h3>
+              <div class="menu-item" style="display: flex; justify-content: space-between; align-items: center;">
+                  <div class="info">
+                      <h3 class="menu_title" style="margin: 0;">Jason Red IPA</h3>
+                  </div>
+                  <div class="drink_cost">
+                      <p style="margin: 0;">$8.00</p>
+                  </div>
+              </div>
+              <div class="menu-item" style="display: flex; justify-content: space-between; align-items: center;">
+                  <div class="info">
+                      <h3 class="menu_title" style="margin: 0;">Uboat German Style</h3>
+                  </div>
+                  <div class="drink_cost">
+                      <p style="margin: 0;">$8.00</p>
+                  </div>
+              </div>
+              <div class="menu-item" style="display: flex; justify-content: space-between; align-items: center;">
+                  <div class="info">
+                      <h3 class="menu_title" style="margin: 0;">BOA XPA</h3>
+                  </div>
+                  <div class="drink_cost">
+                      <p style="margin: 0;">$8.00</p>
+                  </div>
+              </div>
+              <div class="menu-item" style="display: flex; justify-content: space-between; align-items: center;">
+                  <div class="info">
+                      <h3 class="menu_title" style="margin: 0;">Shorthorn Mid Strength</h3>
+                  </div>
+                  <div class="drink_cost">
+                      <p style="margin: 0;">$7.00</p>
+                  </div>
+              </div>
+            
+              <!-- Sparkling Water Section -->
+              <h3 class="menu_title" style="text-align: center; color: black; padding-bottom: 5px; padding-top: 50px;"><u>SPARKLING WATER</u></h3>
+              <div class="menu-item" style="display: flex; justify-content: space-between; align-items: center;">
+                  <div class="info">
+                      <h3 class="menu_title" style="margin: 0;">Sparkling Water</h3>
+                  </div>
+                  <div class="drink_cost">
+                      <p style="margin: 0;">$10.00</p>
+                  </div>
+              </div>
+            
+              <!-- Non-Alcoholic Section -->
+              <h3 class="menu_title" style="text-align: center; color: black; padding-bottom: 5px; padding-top: 50px;"><u>NON-ALCOHOLIC</u></h3>
+              <div class="menu-item" style="display: flex; justify-content: space-between; align-items: center;">
+                  <div class="info">
+                      <h3 class="menu_title" style="margin: 0;">Virgin Strawberry Caipiroska</h3>
+                  </div>
+                  <div class="drink_cost">
+                      <p style="margin: 0;">$10.00</p>
+                  </div>
+              </div>
+              <div class="menu-item" style="display: flex; justify-content: space-between; align-items: center;">
+                  <div class="info">
+                      <h3 class="menu_title" style="margin: 0;">Mojito</h3>
+                  </div>
+                  <div class="drink_cost">
+                      <p style="margin: 0;">$10.00</p>
+                  </div>
+              </div>
+            
+              <!-- Cocktail Section -->
+              <h3 class="menu_title" style="text-align: center; color: black; padding-bottom: 5px; padding-top: 50px;"><u>COCKTAIL</u></h3>
+              <div class="menu-item" style="display: flex; justify-content: space-between; align-items: center;">
+                  <div class="info">
+                      <h3 class="menu_title" style="margin: 0;">Strawberry Caipiroska</h3>
+                  </div>
+                  <div class="drink_cost">
+                      <p style="margin: 0;">$10.00</p>
+                  </div>
+              </div>
+            </div>
+          </div>
+         </div>
+</div>
+  </div>
 
 
 
@@ -189,9 +1091,6 @@
                     <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
                     <line x1="17.5" y1="6.5" x2="17.51" y2="6.5" />
                   </svg>
-                </a>
-              </li>
-              <li>
                 </a>
               </li>
             </ol>
@@ -250,7 +1149,7 @@
               <a href="#">fsdfsdfsdr@gmail.com</a>
             </li>
             <li>
-              <a href="#">dfsfsfsdfdsf fsdffsdf, fsdfsfsdf</a>
+              <a href="https://maps.app.goo.gl/r9op4DsREDdNEMpo9">302 Hill St, Orange NSW 2800, Australia</a>
             </li>
           </ol>
         </div>
