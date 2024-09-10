@@ -1,32 +1,55 @@
 /* page title styles */
 #page__title {
-	padding-top: 3rem;
-	padding-bottom: 2rem;
+    padding-top: 3rem;
+    padding-bottom: 2rem;
 }
 .page__title__text {
-	font-size: 2.2rem;
-	color: var(--black-1);
-}
-@media only screen and (min-width: 768px) {
-	#page__title {
-		padding-top: 5rem;
-		padding-bottom: 3rem;
-	}
-	.page__title__text {
-		font-size: 3.6rem;
-        text-align: center;
-	}
+    font-size: 2.2rem;
+    color: var(--black-1);
 }
 
+/* Responsive adjustments for larger screens */
+@media only screen and (min-width: 768px) {
+    #page__title {
+        padding-top: 5rem;
+        padding-bottom: 3rem;
+    }
+    .page__title__text {
+        font-size: 3.6rem;
+        text-align: center;
+    }
+}
+
+/* Further adjustments for smaller screens (e.g., mobile devices) */
+@media only screen and (max-width: 767px) {
+    .page__title__text {
+        font-size: 1.8rem;
+        text-align: center;
+    }
+    .menu_title {
+        font-size: 1.0rem;
+    }
+    .drink_cost {
+        font-size: 1.0rem;
+    }
+    .menu-item {
+        padding: 10px 0;
+    }
+
+}
+
+/* General styles */
 h1 {
     text-align: center;
     margin: 20px 0;
 }
+
 .cost_title {
     color: red;
     font-weight: bold;
 }
 
+/* Tab styles */
 .tabs {
     display: flex;
     justify-content: center;
@@ -41,22 +64,17 @@ h1 {
     cursor: pointer;
     padding: 14px 16px;
     font-size: 17px;
-    transition: border-bottom-color 0.3s; /* Transition only the bottom border color */
-
-    /* Create a bottom border that is initially transparent */
+    transition: border-bottom-color 0.3s;
     border-bottom: 2px solid transparent;
 }
 
-/* Style for when the tablink is hovered */
 .tablink:hover {
-    border-bottom-color: var(--green-1); /* Show the bottom border on hover */
+    border-bottom-color: var(--green-1);
 }
 
-/* Style for when the tablink is active */
 .tablink.active {
-    border-bottom-color: var(--green-1); /* Show the bottom border when active */
+    border-bottom-color: var(--green-1);
 }
-
 
 .tabcontent {
     display: none;
@@ -65,6 +83,7 @@ h1 {
     border-top: none;
 }
 
+/* Menu item styles */
 .menu-item {
     display: flex;
     align-items: center;
@@ -76,15 +95,19 @@ h1 {
     flex: 1;
     position: relative;
 }
-.menu_title{
-    font-size: 2.5rem;
+
+.menu_title {
+    font-size: 2.0rem;
     color: green;
 }
-.drink_cost{
+
+.drink_cost {
     color: red;
     font-weight: bold;
     text-align: right;
 }
+
+/* Menu container */
 .menu-container {
     display: flex;
     align-items: flex-start;
@@ -100,7 +123,7 @@ h1 {
     justify-content: space-between;
     align-items: center;
     margin-bottom: 20px;
-    border-bottom: 1px dotted black; /* Dotted line between items */
+    border-bottom: 1px dotted black;
     padding-bottom: 10px;
     padding-top: 10px;
 }
@@ -115,5 +138,5 @@ h1 {
 }
 
 .cost_title {
-    margin-left: 20px; /* Space between title and cost */
+    margin-left: 20px;
 }

@@ -12,7 +12,7 @@
   <link rel="stylesheet" href="./globalStyles.css">
   <link rel="stylesheet" href="./components.css">
   <!-- aos library css  -->
-  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css"/>
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">
   <!-- Add your custom css -->
   <link rel="stylesheet" href="./menu.css">
 </head>
@@ -47,7 +47,6 @@
               </svg>
             </div>
             <div class="nav__list__wrapper">
-
               <li><a class="nav__link" href="./index.html">Home</a></li>
               <li><a class="nav__link" href="./menu.html">Menu</a></li>
               <li><a class="nav__link" href="./about.html">About</a></li>
@@ -78,13 +77,13 @@
     <div class="tabs" data-aos="fade-up">
       <button class="tablink active" onclick="openMenu(event, 'Breakfast')">Breakfast</button>
         <button class="tablink" onclick="openMenu(event, 'Lunch')">Lunch</button>
-        <button class="tablink" onclick="openMenu(event, 'Cafe Menu')">Cafe Menu</button>
-        <button class="tablink" onclick="openMenu(event, 'Cafe Beverages')">Cafe Beverages</button>
-        <button class="tablink" onclick="openMenu(event, 'Bar Menu')">Bar Menu</button>
+        <button class="tablink" onclick="openMenu(event, 'CafeMenu')">Cafe Menu</button>
+        <button class="tablink" onclick="openMenu(event, 'CafeBeverages')">Cafe Beverages</button>
+        <button class="tablink" onclick="openMenu(event, 'BarMenu')">Bar Menu</button>
     </div>
 
   <div id="Breakfast" class="tabcontent" style="display: block;" data-aos="fade-up">
-    <h3 class="menu_title" style="text-align: center; font-size: medium;">BREAKFAST (08:00-12:00)</h3>
+    <h3 class="menu_title" style="text-align: center; font-size: medium; color: black;"><u>BREAKFAST (08:00-12:00)</u></h3>
     <div class="menu-container">
         <div class="menu-items">
             <div class="menu-item">
@@ -208,7 +207,7 @@
   
 
 <div id="Lunch" class="tabcontent" data-aos="fade-up">
-  <h3 class="menu_title" style="text-align: center; font-size: medium;">LUNCH (11:00-14:30)</h3>
+  <h3 class="menu_title" style="text-align: center; font-size: medium; color: black;"><u>LUNCH (11:00-14:30)</u></h3>
   <div class="menu-container">
       <div class="menu-items">
           <div class="menu-item">
@@ -312,7 +311,7 @@
   </div>
 </div>
 
-<div id="Cafe Beverages" class="tabcontent" data-aos="fade-up">
+<div id="CafeBeverages" class="tabcontent" data-aos="fade-up">
   <!-- Coffee Section -->
   <h3 class="menu_title" style="text-align: center; color: black; padding-bottom: 5px;"><u>COFFEE</u></h3>
   <h3 class="menu_title" style="text-align: right;">CUP / MUG</h3>
@@ -588,7 +587,7 @@
 </div>
 
 
-<div id="Cafe Menu" class="tabcontent" data-aos="fade-up">
+<div id="CafeMenu" class="tabcontent" data-aos="fade-up">
   <div class="menu-container">
       <div class="menu-items">
           
@@ -717,7 +716,7 @@
 </div>
 
 
-<div id="Bar Menu" class="tabcontent" data-aos="fade-up">
+<div id="BarMenu" class="tabcontent" data-aos="fade-up">
   <div class="menu-container">
       <div class="menu-items">
           
@@ -1059,22 +1058,22 @@
 
 
 
-  <!-- Footer -->
-  <footer>
+ <!-- Footer -->
+ <footer>
     <div class="container">
       <div class="footer__wrapper">
         <div class="footer__col1">
           <div class="footer__logo">
-            <img src="./images/logo.png" alt="Eat Botanic">
+            <img src="./images/logo.png" alt="Eat Botanic Logo">
           </div>
           <p class="footer__desc">
-            Fresh and delicious food to delight the whole family.
+            "Botanical flavors and vibrant dishes for a dining experience you’ll love"
           </p>
           <div class="footer__socials">
             <h4 class="footer__socials__title">Follow us</h4>
             <ol class="footer__socials__list">
               <li>
-                <a href="#">
+                <a href="https://www.facebook.com/p/Eat-Botanic-100076055319902/">
                   <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
                     stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"
                     class="feather feather-facebook">
@@ -1083,7 +1082,7 @@
                 </a>
               </li>
               <li>
-                <a href="#">
+                <a href="https://www.instagram.com/eat_botanic">
                   <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
                     stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"
                     class="feather feather-instagram">
@@ -1127,7 +1126,7 @@
           </h3>
           <ol class="footer__text">
             <li>
-              <a href="#">Contact</a>
+              <a href="./contact.html">Contact</a>
             </li>
             <li>
               <a href="#">Support Center</a>
@@ -1138,23 +1137,23 @@
           </ol>
         </div>
         <div class="footer__col4">
-          <h3 class="footer__text__title">
-            Contact
-          </h3>
-          <ol class="footer__text">
-            <li>
-              <a href="#">+dsfdsfsdf</a>
-            </li>
-            <li>
-              <a href="#">fsdfsdfsdr@gmail.com</a>
-            </li>
-            <li>
-              <a href="https://maps.app.goo.gl/r9op4DsREDdNEMpo9">302 Hill St, Orange NSW 2800, Australia</a>
-            </li>
-          </ol>
+            <h3 class="footer__text__title">
+              Contact
+            </h3>
+            <ol class="footer__text">
+              <li>
+                <a href="tel:+610263610005"></i>+61 2 6361 0005</a>
+              </li>
+              <li>
+                <a href="mailto:Eatbotanic2800@outlook.com">Eatbotanic2800@outlook.com</a>
+              </li>
+              <li>
+                <a href="https://maps.app.goo.gl/r9op4DsREDdNEMpo9">302 Hill St, Orange NSW 2800, Australia</a>
+              </li>
+            </ol>
+          </div>
         </div>
       </div>
-    </div>
   </footer>
   <div id="copyright">
     <div class="container">
