@@ -54,6 +54,7 @@ h1 {
     display: flex;
     justify-content: center;
     margin-bottom: 20px;
+    flex-wrap: wrap; /* Allows tabs to wrap on smaller screens */
 }
 
 .tablink {
@@ -74,6 +75,22 @@ h1 {
 
 .tablink.active {
     border-bottom-color: var(--green-1);
+}
+
+/* Responsive styles for mobile devices */
+@media (max-width: 768px) {
+    .tablink {
+        padding: 10px 12px; /* Smaller padding on mobile */
+        font-size: 15px; /* Smaller font size on mobile */
+        font-weight: bold;
+    }
+}
+
+@media (max-width: 480px) {
+    .tablink {
+        padding: 8px 10px; /* Further reduce padding for very small screens */
+        font-size: 18px; /* Further reduce font size */
+    }
 }
 
 .tabcontent {
