@@ -110,3 +110,140 @@ function openMenu(evt, menuName) {
 document.addEventListener("DOMContentLoaded", function() {
     openMenu(null, 'Breakfast');
 });
+
+
+
+
+//GALLERY
+
+const gallery = document.querySelector('.gallery');
+        const modal = document.getElementById('imageModal');
+        const modalImg = modal.querySelector('.modal-image');
+        const closeBtn = modal.querySelector('.close');
+        const fullscreenBtn = modal.querySelector('.fullscreen');
+        const prevBtn = modal.querySelector('.prev');
+        const nextBtn = modal.querySelector('.next');
+        let currentImageIndex = 0;
+        const images = Array.from(document.querySelectorAll('.gallery-item img'));
+
+        // Open modal
+        gallery.addEventListener('click', (e) => {
+            const clickedItem = e.target.closest('.gallery-item');
+            if (clickedItem) {
+                const img = clickedItem.querySelector('img');
+                modal.style.display = 'block';
+                modalImg.src = img.src;
+                currentImageIndex = images.indexOf(img);
+            }
+        });
+
+        // Close modal
+        closeBtn.addEventListener('click', () => {
+            modal.style.display = 'none';
+            if (document.fullscreenElement) {
+                document.exitFullscreen();
+            }
+        });
+
+        // Fullscreen toggle
+        fullscreenBtn.addEventListener('click', () => {
+            if (!document.fullscreenElement) {
+                modal.requestFullscreen();
+                fullscreenBtn.querySelector('i').classList.replace('fa-expand', 'fa-compress');
+            } else {
+                document.exitFullscreen();
+                fullscreenBtn.querySelector('i').classList.replace('fa-compress', 'fa-expand');
+            }
+        });
+
+        // Previous image
+        prevBtn.addEventListener('click', () => {
+            currentImageIndex = (currentImageIndex - 1 + images.length) % images.length;
+            modalImg.src = images[currentImageIndex].src;
+        });
+
+        // Next image
+        nextBtn.addEventListener('click', () => {
+            currentImageIndex = (currentImageIndex + 1) % images.length;
+            modalImg.src = images[currentImageIndex].src;
+        });
+  let slideshowInterval;
+        let isSlideshow = false;
+        let currentIndex = 0;
+
+        const startSlideshow = () => {
+            isSlideshow = true;
+            slideshowInterval = setInterval(() => {
+                currentIndex = (currentIndex + 1) % images.length;
+                modalImg.src = images[currentIndex].src;
+                slideShowProgress.textContent = `${currentIndex + 1}/${images.length}`;
+                slideShowTimer.querySelector('.slideshow-timer-progress').style.width = '0%';
+                void slideShowTimer.offsetWidth; // Trigger reflow to restart the animation
+                slideShowTimer.querySelector('.slideshow-timer-progress').style.width = '100%';
+            }, 5000);
+            slideshowBtn.innerHTML = '<i class="fas fa-pause"></i>';
+            slideshowBtn.dataset.tooltip = 'Pause Slideshow';
+        };
+
+        const pauseSlideshow = () => {
+            isSlideshow = false;
+            clearInterval(slideshowInterval);
+            slideshowBtn.innerHTML = '<i class="fas fa-play"></i>';
+            slideshowBtn.dataset.tooltip = 'Start Slideshow';
+        };
+
+        const slideshowBtn = document.createElement('button');
+        slideshowBtn.classList.add('control-button', 'slideshow');
+        slideshowBtn.dataset.tooltip = 'Start Slideshow';
+        slideshowBtn.innerHTML = '<i class="fas fa-play"></i>';
+        slideshowBtn.addEventListener('click', () => {
+            if (isSlideshow) {
+                pauseSlideshow();
+            } else {
+                startSlideshow();
+            }
+        });
+
+        // Add the slideshow button to the control panel
+        const controlPanel = modal.querySelector('.control-panel');
+        controlPanel.insertBefore(slideshowBtn, prevBtn);
+
+        // Create slideshow progress and timer elements
+        const slideShowProgress = document.createElement('div');
+        slideShowProgress.classList.add('slideshow-progress');
+
+        const slideShowTimer = document.createElement('div');
+        slideShowTimer.classList.add('slideshow-timer');
+        const slideShowTimerProgress = document.createElement('div');
+        slideShowTimerProgress.classList.add('slideshow-timer-progress');
+        slideShowTimer.appendChild(slideShowTimerProgress);
+
+        // Handle fullscreen change
+        document.addEventListener('fullscreenchange', () => {
+            const icon = fullscreenBtn.querySelector('i');
+            const modalClass = modal.classList;
+            if (document.fullscreenElement) {
+                icon.classList.replace('fa-expand', 'fa-compress');
+                modalClass.add('fullscreen');
+                modal.appendChild(slideShowProgress);
+                modal.appendChild(slideShowTimer);
+            } else {
+                icon.classList.replace('fa-compress', 'fa-expand');
+                modalClass.remove('fullscreen');
+                modal.removeChild(slideShowProgress);
+                modal.removeChild(slideShowTimer);
+                if (isSlideshow) {
+                    pauseSlideshow();
+                }
+            }
+        });
+
+        // Handle other control button clicks
+        const controlButtons = modal.querySelectorAll('.control-button:not(.slideshow)');
+        controlButtons.forEach((btn) => {
+            btn.addEventListener('click', () => {
+                if (isSlideshow) {
+                    pauseSlideshow();
+                }
+            });
+        });

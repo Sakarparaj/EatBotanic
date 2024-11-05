@@ -45,7 +45,7 @@ h1 {
 }
 
 .cost_title {
-    color: red;
+    color: green;
     font-weight: bold;
 }
 
@@ -102,7 +102,7 @@ h1 {
 }
 
 .drink_cost {
-    color: red;
+    color: green;
     font-weight: bold;
     text-align: right;
 }
