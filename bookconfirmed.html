@@ -26,6 +26,42 @@
 	background-color: var(--lightGreen-1);
     background-position-y: 80px;
   }
+  /* Responsive adjustments */
+@media screen and (max-width: 768px) {
+    .submission-wrapper {
+        padding: 12rem 1.5rem;
+        background-size: 150px;
+        background-position-y: 40px;
+    }
+    
+    .form__title {
+        padding-top: 8rem !important;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .submission-wrapper {
+        padding: 10rem 1rem;
+        background-size: 120px;
+    }
+    
+    .form__title {
+        padding-top: 6rem !important;
+        font-size: 2.2rem;
+    }
+}
+
+/* For very small screens */
+@media screen and (max-width: 320px) {
+    .submission-wrapper {
+        padding: 8rem 1rem;
+        background-size: 100px;
+    }
+    
+    .form__title {
+        padding-top: 4rem !important;
+    }
+}
 </style>
 <body>
   <!-- Nav Section -->
