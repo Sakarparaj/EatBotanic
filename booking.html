@@ -62,65 +62,68 @@
     <div class="container">
       <h3 class="form__title">Book Table</h3>
       <div class="form__wrapper">
-        <form name="booking"  action="https://formspree.io/f/xgvwwaap" method="POST" >
+      <iframe name="hiddenConfirm" id="hiddenConfirm" style="display: none;" onload="if(submitted){window.location='bookconfirmed.html';}"></iframe>
+        <form name="booking"  action="https://docs.google.com/forms/d/e/1FAIpQLSd-p1v0Tx833NCzdSJOQ0rHBHv9Z76bprfJL3Lcc01biIQzEA/formResponse" method="POST" target="hiddenConfirm" onsubmit="submitted=true" >
+        
           <div class="form__group">
-            <label for="firstName">First Name</label>
-            <input type="text" id="firstName" name="First Name" required>
+            <label for="entry.2005620554">First Name</label>
+            <input type="text" id="firstName" name="entry.2005620554" required>
           </div>
           <div class="form__group">
-            <label for="lastName">Last Name</label>
-            <input type="text" id="lastName" name="Last Name" required>
+            <label for="entry.870039197">Last Name</label>
+            <input type="text" id="lastName" name="entry.870039197" required>
           </div>
           <div class="form__group">
-            <label for="email">Email</label>
-            <input type="email" id="email" name="Email" required>
+            <label for="entry.1045781291">Email</label>
+            <input type="email" id="email" name="entry.1045781291" required>
           </div>
           <div class="form__group">
-            <label for="contactNumber">Contact Number</label>
-            <input type="tel" id="contactNumber" name="Contact Number" placeholder="04XX XXX XXX" pattern="04[0-9]{2} [0-9]{3} [0-9]{3}" required>
+            <label for="entry.1166974658">Contact Number</label>
+            <input type="tel" id="contactNumber" name="entry.1166974658" placeholder="04XX XXX XXX" pattern="04[0-9]{2} [0-9]{3} [0-9]{3}" required>
           </div>
-
+          
           <div class="form__group">
-            <label for="tableType">Table Type</label>
-            <select name="Table Type" id="tableType" required>
-              <option selected disabled>Choose</option>
-              <option value="small">Small(2 persons)</option>
-              <option value="medium">Medium(4 persons)</option>
-              <option value="large">large(6 persons)</option>
+            <label for="entry.1065046570">Table Type</label>
+            <select name="entry.1065046570" id="tableType" required>
+              <option value="">Choose</option>
+              <option value="Small (2 persons)">Small (2 persons)</option>
+              <option value="Medium (3-4 persons)">Medium (3-4 persons)</option>
+              <option value="Large (5-8 persons)">Large (5-8 persons)</option>
+              <option value="Extra Large (9+ persons)">Extra Large (9+ persons)</option>
             </select>
           </div>
           <div class="form__group">
-            <label for="guestNumber">Guest Number</label>
-            <input type="number" id="guestNumber" name="Guest Number" min="1" max="10" required>
+            <label for="entry.839337160">Guest Number</label>
+            <input type="number" id="guestNumber" name="entry.839337160" min="1" max="15" required>
           </div>
           <div class="form__group">
-            <label for="placement">Placement</label>
-            <select name="Placement" id="placement">
-              <option selected disabled>Choose</option>
-              <option value="outdoor">Outdoor</option>
-              <option value="indoor">Indoor</option>
+            <label for="entry.597001611">Placement</label>
+            <select name="entry.597001611" id="placement" required>
+              <option value="">Choose</option>
+              <option value="Outdoor">Outdoor</option>
+              <option value="Indoor">Indoor</option>
             </select>
           </div>
 
           <div class="form__group">
-            <label for="eventType">Event Type</label>
-            <input type="text" id="eventType" name="eventType" placeholder="e.g., Anniversaries, Birthday Parties, Corporate Events" />
+            <label for="entry.441502674">Event Type</label>
+            <input type="text" id="eventType" name="entry.441502674" placeholder="e.g., Anniversaries, Birthday Parties, Corporate Events" />
           </div>          
 
           <div class="form__group">
-            <label for="date">Date</label>
-            <input type="date" id="date" name="Date" required>
+            <label for="entry.1237786231">Date</label>
+            <input type="date" id="date" name="entry.1237786231" required>
           </div>
           <div class="form__group">
-            <label for="time">Time</label>
-            <input type="time" id="time" name="Time" required>
+            <label for="entry.660113806">Time</label>
+            <input type="time" id="time" name="entry.660113806" required>
           </div>
         
 
           
           <div class="form__group form__group__full">
-            <label for="note">Note</label>
-            <textarea name="Note" id="note" rows="4"></textarea>
+            <label for="entry.1579371833">Note</label>
+            <textarea name="entry.1579371833" id="note" rows="4"></textarea>
           </div>
           <button type="submit" class="btn primary-btn">Book Table</button>
         </form>

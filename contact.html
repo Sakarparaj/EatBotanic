@@ -66,28 +66,29 @@
         Contact & Inquiry
       </h3>
       <div class="form__wrapper">
-        <form name="contact" method="POST">
+        <iframe name="hiddenConfirm" id="hiddenConfirm" style="display: none;" onload="if(submitted){window.location='submission.html';}"></iframe>
+        <form name="contact" method="POST" action="https://docs.google.com/forms/d/e/1FAIpQLSc7BRYH2FK9_wOOBwqir57dLWhVdTtbXtaW5bCvIXunxZsIOA/formResponse" target="hiddenConfirm" onsubmit="submitted=true">
           <div class="form__group">
-            <label for="firstName">First Name</label>
-            <input type="text" id="firstName" name="First Name" required>
+            <label for="entry.2005620554">First Name</label>
+            <input type="text" id="firstName" placeholder="John" name="entry.2005620554" required>
           </div>
           <div class="form__group">
-            <label for="lastName">Last Name</label>
-            <input type="text" id="lastName" name="Last Name" required>
+            <label for="entry.1763813823">Last Name</label>
+            <input type="text" id="lastName" placeholder="Doe" name="entry.1763813823" required>
           </div>
           <div class="form__group">
-            <label for="email">Email</label>
-            <input type="email" id="email" name="Email" required>
+            <label for="entry.1045781291">Email</label>
+            <input type="email" id="email" placeholder="your@example.com" name="entry.1045781291" required>
           </div>
           <div class="form__group">
-            <label for="subject">Subject</label>
-            <input type="text" id="subject" name="Subject" required>
+            <label for="entry.1413814801">Subject</label>
+            <input type="text" id="subject" placeholder="Subject (e.g., reservation, feedback)" name="entry.1413814801" required>
           </div>
           <div class="form__group form__group__full">
-            <label for="message">Message</label>
-            <textarea name="Message" id="message" cols="30" rows="10" required></textarea>
+            <label for="entry.839337160">Message</label>
+            <textarea name="entry.839337160" placeholder="Write your message here" id="message" cols="30" rows="10" required></textarea>
           </div>
-          <button type="submit" class="btn primary-btn">Send</button>
+          <button type="submit" class="btn primary-btn">Submit</button>
         </form>
       </div>
     </div>

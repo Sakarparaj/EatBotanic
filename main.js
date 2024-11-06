@@ -111,7 +111,8 @@ document.addEventListener("DOMContentLoaded", function() {
     openMenu(null, 'Breakfast');
 });
 
-
+//Form Submission
+var submitted=false
 
 
 //GALLERY
