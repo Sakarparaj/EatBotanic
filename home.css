@@ -872,3 +872,13 @@
 	}
   }
   /* End Gallery Section */
+
+
+
+  .card-banner {
+	width: 100%;
+	max-width: 300px;
+	max-height: 300px;
+	object-fit: cover;
+  }
+  
