@@ -90,16 +90,23 @@
 /* End Nav Styles */
 /* Global Button Styles */
 .btn {
-	color: var(--green-1);
+	color: var(--white-1);
 	font-family: Poppins;
 	font-weight: 500;
 	border-radius: 8px;
 	font-size: 1.4rem;
 	padding: 1.2rem 2rem;
+	background: var(--green-1);
 }
 .primary-btn {
 	color: var(--white-1);
 	background: var(--green-1);
+}
+.btn:hover {
+	color: black;
+}
+.primary-btn:hover {
+	color: black;
 }
 @media only screen and (min-width: 700px) {
 	.btn {

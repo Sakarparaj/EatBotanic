@@ -157,3 +157,42 @@ h1 {
 .cost_title {
     margin-left: 20px;
 }
+.menu-button-wrapper{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 35px;
+    margin-right: 35px;
+
+}
+.button_container{
+   	text-align: right;
+  }
+.call-btn{
+		font-family: Poppins;
+		font-weight: 500;
+		border-radius: 8px;
+		font-size: 1.8rem;
+		padding: 1.2rem 2rem;
+		color: var(--white-1);
+		background: var(--green-1);
+	}
+.call-btn-text:hover{
+		color: black;
+	}
+@media screen and (max-width: 768px) {
+	.call-btn svg {
+			width: 20px;
+			height: 16px;
+		}
+	.call-btn-text {
+			font-size: 1.4rem;
+		}
+	}
+	
+	@media screen and (max-width: 480px) {
+		.call-btn svg {
+			width: 15px;
+			height: 12px;
+		}
+	}

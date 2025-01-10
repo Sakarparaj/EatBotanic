@@ -22,11 +22,13 @@
 	font-size: 1.8rem;
 	margin-bottom: 1.5rem;
 	color: var(--black-1);
+	padding-bottom: 50px;
 }
 .hero__info {
 	text-align: center;
 	font-size: 1.4rem;
 	margin-bottom: 1.5rem;
+	padding-bottom: 25px;
 	color: var(--black-2);
 }
 .button__wrapper {
@@ -42,7 +44,7 @@
 		flex: 3;
 	}
 	.hero__right {
-		flex: 4;
+		flex: 3;
 	}
 	.hero__heading {
 		font-size: 3.6rem;
@@ -881,4 +883,37 @@
 	max-height: 300px;
 	object-fit: cover;
   }
-  
+
+  .button_container{
+	padding-top: 10px;
+	align-content: center;
+	text-align: center;
+  }
+  .call-btn{
+		font-family: Poppins;
+		font-weight: 500;
+		border-radius: 8px;
+		font-size: 1.8rem;
+		padding: 1.2rem 2rem;
+		color: var(--white-1);
+		background: var(--green-1);
+	}
+	.call-btn-text:hover{
+		color: black;
+	}
+	@media screen and (max-width: 768px) {
+		.call-btn svg {
+			width: 20px;
+			height: 16px;
+		}
+		.call-btn-text {
+			font-size: 1.4rem;
+		}
+	}
+	
+	@media screen and (max-width: 480px) {
+		.call-btn svg {
+			width: 15px;
+			height: 12px;
+		}
+	}
