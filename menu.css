@@ -181,12 +181,16 @@ h1 {
 		color: black;
 	}
 @media screen and (max-width: 768px) {
+    .call-btn {
+        font-size: 1.4rem;
+        font-weight: bold;
+    }
 	.call-btn svg {
 			width: 20px;
 			height: 16px;
 		}
 	.call-btn-text {
-			font-size: 1.4rem;
+			font-size: 1.2rem;
 		}
 	}
 	
