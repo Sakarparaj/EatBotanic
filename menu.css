@@ -1,20 +1,20 @@
 /* page title styles */
-#page__title {
+#page_title {
     padding-top: 3rem;
     padding-bottom: 2rem;
 }
-.page__title__text {
+.page_title_text {
     font-size: 2.2rem;
     color: var(--black-1);
 }
 
 /* Responsive adjustments for larger screens */
 @media only screen and (min-width: 768px) {
-    #page__title {
+    #page_title {
         padding-top: 5rem;
         padding-bottom: 3rem;
     }
-    .page__title__text {
+    .page_title_text {
         font-size: 3.6rem;
         text-align: center;
     }
@@ -22,7 +22,7 @@
 
 /* Further adjustments for smaller screens (e.g., mobile devices) */
 @media only screen and (max-width: 767px) {
-    .page__title__text {
+    .page_title_text {
         font-size: 1.8rem;
         text-align: center;
     }

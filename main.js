@@ -1,7 +1,7 @@
-const navCloseEl = document.querySelector('.nav__close');
-const navList = document.querySelector('.nav__list');
-const navIconEl = document.querySelector('.nav__icon');
-const navBgOverlayEl = document.querySelector('.nav__bgOverlay');
+const navCloseEl = document.querySelector('.nav_close');
+const navList = document.querySelector('.nav_list');
+const navIconEl = document.querySelector('.nav_icon');
+const navBgOverlayEl = document.querySelector('.nav_bgOverlay');
 
 
 window.addEventListener('DOMContentLoaded', () =>{
@@ -37,14 +37,6 @@ AOS.init({
   mirror: false, // whether elements should animate out while scrolling past them
   anchorPlacement: 'top-bottom', // defines which position of the element regarding to window should trigger the animation
 });
-
-// const dishGridEl = Array.from(document.querySelectorAll('#dishGrid'));
-// if (dishGridEl.length > 0){
-//   // console.log(dishGridEl)
-//   dishGridEl.forEach(item => {
-//     item.setAttribute('data-aos', 'fade-up');
-//   })
-// }
 
 /**
  * header sticky & back to top
