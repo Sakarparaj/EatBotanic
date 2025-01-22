@@ -415,3 +415,7 @@ footer {
 		margin-top: 1.5rem;
 	}
 }
+.required-asterisk {
+	color: #FF0000;
+	margin-left: 2px;
+  }
