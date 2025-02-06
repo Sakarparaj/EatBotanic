@@ -161,8 +161,8 @@ h1 {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-left: 35px;
-    margin-right: 35px;
+    margin-left: 270px;
+    margin-right: 280px;
 
 }
 .button_container{
@@ -181,6 +181,14 @@ h1 {
 		color: black;
 	}
 @media screen and (max-width: 768px) {
+    .menu-button-wrapper{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-left: 20px;
+        margin-right: 20px;
+    
+    }
     .call-btn {
         font-size: 1.4rem;
         font-weight: bold;
