@@ -240,3 +240,29 @@ const gallery = document.querySelector('.gallery');
                 }
             });
         });
+
+        // POPUP IMAGE FUNCTIONALITY 
+        document.addEventListener('DOMContentLoaded', function() {
+            // Show the popup when the page loads
+            const popup = document.getElementById('imagePopup');
+            
+            // Wait a short moment before showing the popup
+            setTimeout(function() {
+            popup.style.display = 'block';
+            }, 500);
+            
+            // Close popup when clicking the X button
+            const closeBtn = document.querySelector('.close-btn');
+            closeBtn.addEventListener('click', function() {
+            popup.style.display = 'none';
+            });
+            
+            // Close popup when clicking outside the image (optional)
+            window.addEventListener('click', function(event) {
+            if (event.target === popup) {
+                popup.style.display = 'none';
+            }
+            });
+            
+        });
+        
