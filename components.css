@@ -352,70 +352,58 @@ footer {
 	font-size: 1.8rem;
 	color: var(--black-1);
 	font-weight: 600;
+	text-align: center;
 }
 .form_wrapper {
 	padding: 3rem 0;
 }
-.form_wrapper form {
-	display: grid;
-	grid-template-columns: 1fr;
-	gap: 2rem;
-}
-.form_group label {
-	font-size: 1.6rem;
-	font-family: Poppins;
-	color: var(--black-2);
-	font-weight: 500;
-}
-.form_group input,
-.form_group textarea,
-.form_group select {
-	width: 100%;
-	border: none;
-	background-color: var(--lightGreen-1);
-	font-size: 1.4rem;
-	font-family: Raleway;
-	font-weight: 600;
-	padding: 1.5rem;
-	border-radius: 8px;
-	margin-top: 0.5rem;
-	color: var(--black-2);
-}
-.form_group textarea {
-	resize: vertical;
-}
-.form_wrapper button[type='submit'] {
-	width: max-content;
-	border: none;
-	padding: 1rem 4rem;
-	font-weight: 500;
-	letter-spacing: 0.1rem;
-}
+
 @media only screen and (min-width: 768px) {
 	.form_title {
 		font-size: 3.6rem;
 	}
 	.form_wrapper {
 		padding: 5rem 0;
-	}
-	.form_wrapper form {
-		grid-template-columns: 1fr 1fr;
-	}
-	.form_group_full {
-		grid-column: 1/3;
-	}
-	.form_group label {
-		font-size: 1.8rem;
-	}
-	.form_group input,
-	.form_group textarea,
-	.form_group select {
-		font-size: 1.8rem;
-		padding: 2rem;
-		margin-top: 1.5rem;
-	}
-}
+}}
 .required-asterisk {
 	color: #FF0000;
 	margin-left: 2px;
   }
+
+   .form_wrapper {
+      display: flex;
+      justify-content: center;
+      background-color: #e8e4d9;
+      padding: 20px;
+      border-radius: 8px;
+    }
+
+    .form_wrapper iframe {
+      background-color: #e8e4d9;
+    }
+
+    /* Desktop and tablet - normal height */
+    @media (min-width: 769px) {
+      #bookingIframe {
+        height: 800px;
+      }
+    }
+
+    /* Mobile devices - full content display */
+    @media (max-width: 768px) {
+      .form_wrapper {
+        padding: 10px;
+      }
+      
+      #bookingIframe {
+        height: 1200px; /* Increased height to show full content */
+        min-height: 100vh; /* Minimum viewport height */
+      }
+    }
+
+    @media (max-width: 480px) {
+      #bookingIframe {
+        height: 1400px; /* Even more height for smaller screens */
+        min-height: 120vh;
+      }
+    }
